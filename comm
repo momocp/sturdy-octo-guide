@@ -1,0 +1,31 @@
+git config --global user.name "User Name" // set user name
+git config --global user.email "user@email.com" // set user email
+git config --list // show active settings
+git help commit // open git manual in browser
+cd c:/targetdir // change directory
+git init // create git repository in this directory or reinit existing
+git status // show info about files status (untracted / unmodified etc)
+git add . // add all files to unmodified status
+git commit -m "Comment" // commit files
+git remote add origin https://github.com/user/repositoryName // set remote repository
+git push -u origin master // add files to remote repository to master brunch
+git clone https://github.com/username/repository.git // clone repository files to this directory
+git remote // show names of remote servers
+git remote -v // show urls of remote servers
+git remote set-url <servername> https://... // set new url to remote server "servername"
+git pull origin master //pull repository
+
+// log variants
+git log --pretty=oneline
+git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago'
+git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short // this one is good
+
+Location .gitconfig in Windows :
+c:\users\user\.gitconfig
+
+for use aliases include them into .gitconfig
+alias usage example:
+[alias]
+	psh = git push -u origin master
+
+tip: copy from bufer to git bash - ctrl + Ins
